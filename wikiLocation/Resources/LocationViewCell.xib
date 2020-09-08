@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LocationViewCell" customModule="wikiLocation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="209"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="298" height="209"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYX-od-g2Z" customClass="BorderedView" customModule="wikiLocation" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="298" height="209"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbb-rG-uLL" userLabel="Title Label">
+                                <rect key="frame" x="115.5" y="94.5" width="67" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cbb-rG-uLL" firstAttribute="centerX" secondItem="DYX-od-g2Z" secondAttribute="centerX" id="awf-BS-9tk"/>
+                            <constraint firstItem="Cbb-rG-uLL" firstAttribute="centerY" secondItem="DYX-od-g2Z" secondAttribute="centerY" id="bO3-jQ-grp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.7843137255" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="DYX-od-g2Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2aM-6b-23G"/>
+                <constraint firstItem="DYX-od-g2Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cee-Nv-SOT"/>
+                <constraint firstAttribute="bottom" secondItem="DYX-od-g2Z" secondAttribute="bottom" id="T2x-8S-yq0"/>
+                <constraint firstAttribute="trailing" secondItem="DYX-od-g2Z" secondAttribute="trailing" id="dOK-1b-8fC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="278" height="209"/>
+            <connections>
+                <outlet property="borderedView" destination="DYX-od-g2Z" id="fcv-Tg-4Rm"/>
+                <outlet property="locationNameLabel" destination="Cbb-rG-uLL" id="DaA-Uy-WDm"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="104.12946428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
