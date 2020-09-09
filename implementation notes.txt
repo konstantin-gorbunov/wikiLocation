@@ -1,0 +1,10 @@
+First of all, I am using not a main branch of the Wikipedia iOS Project.
+The reason:
+1. The Wikipedia iOS Project's main branch already migrated to Xcode 12 beta.
+2. One of the repository ('hpple') which is present in the cartage config file was deleted, and those changes were not included in the main branch yet.
+
+My repo configured to build in Xcode 11 and based on a branch with excluded 'hpple' dependency.
+
+
+The client app doesn't have validation of entered user data of a custom location.
+The latitude must be a number between -90 and 90 and the longitude between -180 and 180.
